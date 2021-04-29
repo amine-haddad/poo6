@@ -4,6 +4,7 @@ require 'Car.php';
 require_once 'Bicycle.php';
 require_once 'Truck.php';
 require_once 'LightableInterface.php';
+require_once 'Speedometer.php';
 
 $bike1 = new Bicycle('black', '1');
 $bike2 = new Bicycle('green', '1');
@@ -15,7 +16,9 @@ $truck = new Truck('black', 12, 'Fuel', 50);
 
 //$Car1->setParkBrake();
 
-$bike1->setCurrentSpeed(11);
+/*$bike1->setCurrentSpeed(11);
 $bike1->getCurrentSpeed();
-$bike1->switchOn();
+$bike1->switchOn();*/
 
+echo Speedometer::convertMilesToKm(10);
+echo Speedometer::convertKmToMiles(10);
